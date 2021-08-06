@@ -9,6 +9,7 @@ const useLocalStorage = (key, initialValue) =>{
         }
 
         localStorage.setItem(key, JSON.stringify(initialValue))
+        return(initialValue)
     })
 
     const setLocalStorageValue = (value)=>{
